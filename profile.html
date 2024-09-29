@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="profile-header">
+                    <div class="avatar-container">
+                        <img id="avatar" src="https://github.com/shadcn.png" alt="User's profile picture" class="avatar">
+                        <button id="changeAvatarBtn" class="btn btn-secondary btn-sm">Change</button>
+                        <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                    </div>
+                    <div>
+                        <h1 id="userName" class="card-title">John Doe</h1>
+                        <p id="userEmail" class="card-description">john.doe@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="tabs">
+                    <button class="tab-trigger active" data-tab="profile">Profile</button>
+                    <button class="tab-trigger" data-tab="wallet">Wallet</button>
+                    <button class="tab-trigger" data-tab="questions">Questions</button>
+                </div>
+                <div id="profileTab" class="tab-content active">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" value="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="john.doe@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" id="age" value="30">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" value="New York, NY">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" value="Software Developer">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio">Passionate about technology and innovation.</textarea>
+                    </div>
+                </div>
+                <div id="walletTab" class="tab-content">
+                    <div class="form-group">
+                        <label>Current Balance</label>
+                        <div id="balance" class="balance">$100.00</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="addAmount">Withdraw Money</label>
+                        <div class="add-money-container">
+                            <input type="number" id="addAmount" min="0" step="0.01" placeholder="Enter amount">
+                            <button id="addMoneyBtn" class="btn">Withdraw</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="disperseAmount">Disperse Funds</label>
+                        <div class="disperse-money-container">
+                            <input type="number" id="disperseAmount" min="0" step="0.01" placeholder="Question ID">
+                            <!-- <textarea id="recipientAddresses" placeholder="Enter recipient addresses separated by commas"></textarea> -->
+                            <button id="disperseBtn" class="btn">Disperse</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="questionsTab" class="tab-content">
+                    <h3>Your Questions</h3>
+                    <div id="questionsContainer"></div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-outline">Cancel</button>
+                <button class="btn">Save Changes</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Favicon Links -->
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon_io/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="favicon_io/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="favicon_io/favicon-48x48.png" sizes="48x48" type="image/png" />
+
+    <!-- Title with MyTunes -->
+    <title>DigiLoom</title>
+
+    <!-- AWS SDK for JavaScript -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1233.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="img/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container" id="container">
+
+        <!-- Sign Up Form -->
+        <div class="form-container sign-up">
+            <form id="signUpForm">
+                <h1>Create Account</h1>
+                <!-- <div class="social-icons">
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Google')"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Facebook')"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Spotify')"><i class='bx bxl-spotify'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('YouTube')"><i class='bx bxl-youtube'></i></a>
+                </div> -->
+                <span>Register with E-mail</span>
+                <input type="text" placeholder="Name" id="signUpName" required>
+                <input type="email" placeholder="Enter E-mail" id="signUpEmail" required>
+                <input type="password" placeholder="Enter Password" id="signUpPassword" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="form-container sign-in">
+            <form id="signInForm">
+                <h1>Sign In</h1>
+                <!-- <div class="social-icons">
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Google')"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Facebook')"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Spotify')"><i class='bx bxl-spotify'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('YouTube')"><i class='bx bxl-youtube'></i></a>
+                </div> -->
+                <span>Login With Email & Password</span>
+                <input type="email" placeholder="Enter E-mail" id="signInEmail" required>
+                <input type="password" placeholder="Enter Password" id="signInPassword" required>
+                <a href="#">Forgot Password?</a>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <!-- MyTunes Logo -->
+                    <!-- <img src="img/logo.png" alt="MyTunes Logo" class="mytunes-logo"> -->
+                    <h1>Welcome To <br>DigiLoom</h1>
+                    <p>Sign in With ID & Password</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <!-- MyTunes Logo -->
+                    <!-- <img src="img/logo.png" alt="MyTunes Logo" class="mytunes-logo"> -->
+                    <h1>Hey DigiLoom Community</h1>
+                    <p>Join DigiLoom" and Enjoy Voting</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="signup-btn" id="signupBtn">Sign Up</button>
+            <button class="logout-btn" id="logoutBtn" style="display:none;">Log Out</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

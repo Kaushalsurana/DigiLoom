@@ -1,0 +1,231 @@
+/* General Styles */
+body {
+    font-family: "Newsreader", system-ui;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    font-size: 18px;
+}
+
+header {
+    background-color: #ba6f25; /* Bright blue header */
+    color: #fff;
+    /*  padding: 0.5rem 0; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.navbar-left {
+    display: flex; /* Ensure the left section aligns items */
+    align-items: center; /* Center align the logo vertically */
+}
+
+.navbar-left img.logo {
+    height: 70px; /* Set logo size */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0; /* Remove any margin */
+    display: block; /* Ensure no spacing caused by inline-block */
+    background: none; /* Remove any background effect */
+}
+
+.navbar-right ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-right ul li {
+    margin-left: 1rem;
+}
+
+.navbar-right ul li a {
+    font-size: 2.5rem;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background-color: #ba6f25;
+    color: #ba6f25;
+}
+
+.profile-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+main {
+    padding: 1.5rem;
+    max-width: 3000px; /* Increased maximum width of main box */
+    margin: 0 500px;
+}
+
+#upload-poll {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Set a specific width */
+    max-width: 900px; /* Increased maximum width for the upload box */
+}
+
+h1 {
+    color: #000000;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.1em;
+}
+
+textarea, input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #ba6f25;
+}
+
+/* Styles for poll options */
+.option-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.poll-option {
+    height: 45px;
+    font-size: 1em;
+    width: 400px; /* Increased width */
+    margin-right: 15px;
+}
+
+.file-upload {
+    display: none;
+}
+
+.file-upload-label {
+    background-color: #ba6f25;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 25px;
+    transition: all 0.3s;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.file-upload-label:hover {
+    background-color: #ec8107;
+    transform: translateY(-2px);
+}
+
+.preview-container {
+    margin-left: 15px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    /* border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+/* Styles for the Assign Pool and Duration fields */
+.duration-container {
+    display: flex; /* Use flex to align both fields in a row */
+    justify-content: space-between; /* Space between the fields */
+    margin-top: 15px; /* Space above the fields */
+}
+
+.duration-container > div {
+    flex: 1; /* Allow each to take up equal space */
+    margin-right: 15px; /* Space between the two fields */
+    padding: 10px; /* Padding inside each field */
+}
+
+.duration-container > div:last-child {
+    margin-right: 0; /* No margin on the last child */
+}
+
+/* Buttons */
+.buttons-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 30%; /* Adjust width of buttons */
+}
+
+button[type="submit"] {
+    background-color: #ba6f25; /* Green */
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #ec8107;
+    transform: translateY(-2px);
+}
+
+#add-option, #analyse-ai {
+    background-color: #ff0000; /* Coral */
+    color: white;
+}
+
+#add-option:hover, #analyse-ai:hover {
+    background-color: #ff5e5e;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    /* padding: 0rem 0; */
+    background-color: #ba6f25; /* Matching footer color */
+    color: #fff;
+    font-size: 2rem;
+}
