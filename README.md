@@ -5,6 +5,10 @@ DigiLoom is a decentralized platform that connects companies or individuals with
 
 Companies or individuals deposit payments in crypto, and users are compensated with micropayments upon task completion. The platform is ideal for tasks like data labeling, early market reviews, and other small-scale assignments, providing efficient, low-fee services compared to traditional freelancing platforms.
 
+The Contract is Deployed on Neo X Testnet:
+Address: 0xB0B17f9ef03f13E77e8eE2117067989a4118489A
+Explorer Link: https://xt4scan.ngd.network/address/0xB0B17f9ef03f13E77e8eE2117067989a4118489A
+
 # Key Features
 Crypto Micropayments: Users are paid in cryptocurrency for completing tasks, ensuring fast and secure payments without traditional fees.
 
