@@ -3,7 +3,7 @@
 // AWS S3 Configuration
 AWS.config.update({
     region: 'us-east-1', // Change to your desired region
-    credentials: new AWS.Credentials('AKIAQMEY6BX3KESQWG37', 'IHHj2T2PKSHBzV+qLSkPDuelU6qdNpNJZ/UQuTjc') // Use proper IAM role and policies for production
+    credentials: new AWS.Credentials('', '') // Use proper IAM role and policies for production
 });
 
 const s3 = new AWS.S3();
