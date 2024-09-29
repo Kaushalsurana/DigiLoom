@@ -45,6 +45,13 @@
 - **AI Analysis**: Assigns tasks based on user skill profiles.
 
 ---
+
+# File Structure
+- **saas.sol**: Smart Contract of the Project
+- **index.html**: Main HTML file of the contract
+- **.env**(Not Shared): Azure API Keys and AWS Keys
+
+---
 Note:
 To run the application and access the analysis features, you need to set up your Azure credentials. Follow the steps below:
 
