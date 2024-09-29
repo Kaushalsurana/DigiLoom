@@ -45,15 +45,13 @@
 - **AI Analysis**: Assigns tasks based on user skill profiles.
 
 ---
+Note:
+To run the application and access the analysis features, you need to set up your Azure credentials. Follow the steps below:
 
-## Future Scope
-- **Multi-Cryptocurrency Support**: Enable payments with multiple cryptocurrencies for greater flexibility.
-- **Advanced AI Matching**: Improve AI models for precise task-to-user matching, including dynamic skill assessments and user history.
-- **Reputation System**: Develop a ranking system for companies and users based on performance, creating a trust-driven marketplace.
-- **Smart Contracts**: Integrate smart contracts for automatic escrow and payment release upon task completion.
-- **Mobile Application**: Launch a mobile version to enhance accessibility for companies and users.
-- **Decentralized Governance**: Introduce community-based voting for platform improvements and feature development.
+### 1. Create a `.env` File
+You need to create a `.env` file at the root of the project to securely store your Azure API credentials.
 
----
-
-Join us on this innovative journey to revolutionize the way tasks are completed! 🚀
+### 2. Add the Following Variables to Your `.env` File:
+```bash
+AZURE_API_ENDPOINT=https://your-azure-endpoint-url
+AZURE_API_KEY=your-azure-api-key
