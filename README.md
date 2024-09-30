@@ -5,6 +5,16 @@
 ## Overview
 **DigiLoom** is a decentralized platform that connects companies and individuals with a distributed network of users to complete small tasks. By leveraging cryptocurrency for secure and instant micropayments, AI for intelligent analysis, cloud storage (AWS) for data management, and blockchain for trustless and transparent transactions, DigiLoom offers an innovative solution for task management.
 
+---
+
+## Team Members
+1. Vatsal Tibrewal
+2. Kaushal Surana
+3. Aditya Sharma
+4. Hardik Agrawal
+
+---
+
 ### How It Works
 1. **Deposit Payments**: Companies or individuals deposit payments in cryptocurrency.
 2. **Complete Tasks**: Users are compensated with micropayments upon successful task completion.
