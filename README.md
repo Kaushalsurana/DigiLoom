@@ -52,6 +52,12 @@
 - **.env**(Not Shared): Azure API Keys and AWS Keys
 
 ---
+
+YouTube Link: https://youtu.be/jxyhdD2zYq4
+Presentation Link: https://docs.google.com/presentation/d/1yFOerysO-eAXtJYBF86tR7hCeLOI2Lb9/edit#slide=id.p1
+
+---
+
 Note:
 To run the application and access the analysis features, you need to set up your Azure credentials. Follow the steps below:
 
