@@ -53,8 +53,8 @@
 
 ---
 
-YouTube Link: https://youtu.be/jxyhdD2zYq4
-Presentation Link: https://docs.google.com/presentation/d/1yFOerysO-eAXtJYBF86tR7hCeLOI2Lb9/edit#slide=id.p1
+- YouTube Link: https://youtu.be/jxyhdD2zYq4
+- Presentation Link: https://docs.google.com/presentation/d/1yFOerysO-eAXtJYBF86tR7hCeLOI2Lb9/edit#slide=id.p1
 
 ---
 
