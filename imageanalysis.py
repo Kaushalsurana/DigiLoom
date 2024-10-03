@@ -13,7 +13,6 @@ def encode_image(image_path):
         return base64.b64encode(image_file.read()).decode('utf-8')
 
 def rate_portfolio_images(image_urls):
-    # Build the message content for each image
     message_content = []
     
     for i, image_url in enumerate(image_urls):
@@ -27,9 +26,8 @@ def rate_portfolio_images(image_urls):
             }
         )
     
-    # Send the request to the API
     response = client.chat.completions.create(
-        model="gpt-4o-standard",  # Use the appropriate model
+        model="gpt-4o-standard", 
         messages=[
             {
                 "role": "system",
@@ -60,7 +58,6 @@ Evaluate all four images based on these criteria."""
     # Access the content of the first message choice
     return response.choices[0].message.content
 
-# List of image URLs
 image_urls = [
     "https://microsaastest.s3.amazonaws.com/S+4.jpeg",
     "https://microsaastest.s3.amazonaws.com/S1.jpeg",
