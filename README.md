@@ -11,7 +11,7 @@
 1. Vatsal Tibrewal
 2. Kaushal Surana
 3. Aditya Sharma
-4. Hardik Agrawal
+4. Hardik Agarwal
 
 ---
 
